@@ -172,7 +172,7 @@ const Home = ({ list, error }) => {
     e.preventDefault();
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/todo/${selectedTodo._id}`,
+        `https://todo-w1hq.onrender.com/${selectedTodo._id}`,
         formData
       );
       console.log('Updated:', response.data);
