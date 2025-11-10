@@ -13,7 +13,7 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/todo')
+        const response = await axios.get('https://todo-w1hq.onrender.com')
         console.log(response.data)
         setList(response.data)
       } catch (error) {
