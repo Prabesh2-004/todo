@@ -19,7 +19,7 @@ const Create = ({ setList }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/api/todo/create', userInput);
+      const response = await axios.post('https://todo-w1hq.onrender.com/create', userInput);
       setList(prevList => [...prevList, response.data]);
       console.log(response.data);
       navigate('/')
