@@ -187,7 +187,7 @@ const Home = ({ list, error }) => {
 
   const deleteItem = async (itemId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/todo/${itemId}`);
+      await axios.delete(`https://todo-w1hq.onrender.com/${itemId}`);
       console.log('Deleted');
       window.location.reload();
       toast.success('Successfully Deleted!');
