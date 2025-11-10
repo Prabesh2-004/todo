@@ -300,7 +300,7 @@ const Home = ({ list, error }) => {
               />
             </div>
             <div className='w-full'>
-              <Button type='submit' className='w-full bg-green-400'>
+              <Button type='submit' className='w-full py-3 cursor-pointer bg-green-400'>
                 Update
               </Button>
             </div>
